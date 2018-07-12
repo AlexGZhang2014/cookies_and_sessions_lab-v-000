@@ -5,7 +5,7 @@
   <% end %>
 </ul>
 <%= form_for @item do |f| %>
-  <%= f.label :item_name %>
-  <%= f.text_field :item_name %>
-  <%= f.submit %>
+  <%= f.label :product %>
+  <%= f.text_field :product %>
+  <%= f.submit "add item to cart" %>
 <% end %>
