@@ -3,8 +3,6 @@ class ProductsController < ApplicationController
   end
   
   def add
-    @cart = cart
-    @item = Item.new(params[:product])
     cart << @item
     cart.save
     redirect_to index
