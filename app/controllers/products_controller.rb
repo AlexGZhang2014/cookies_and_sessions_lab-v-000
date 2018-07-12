@@ -4,5 +4,6 @@ class ProductsController < ApplicationController
   end
   
   def add
+    @item = 
   end
 end
