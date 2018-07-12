@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
   
   def add
     cart << params[:product]
-    cart.save
     redirect_to index
   end
 end
