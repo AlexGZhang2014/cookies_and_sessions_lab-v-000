@@ -1,7 +1,11 @@
 <h1>Index page</h1>
 <ul>
-  <% @cart.each do |item| %>
-    <li><%= item %></li>
+  <% if !@cart.empty? %>
+    <% @cart.each do |item| %>
+      <li><%= item %></li>
+    <% end %>
+  <% else %>
+    <p>There is nothing in the cart.</p>
   <% end %>
 </ul>
 <%= form_tag ({controller: 'products', action: 'add', method: 'post'}) do %>
