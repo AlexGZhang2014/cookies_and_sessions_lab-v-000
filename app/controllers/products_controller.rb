@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
   
   def add
+    @cart = cart
     @item = Item.new(params[:item_name])
     cart << @item
     redirect_to index
